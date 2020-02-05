@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Visualisation"
+        android:key="pref_visualisation">
+        <PreferenceScreen
+            android:key="button_voicemail_category_key"
+            android:title="Graph"
+            android:persistent="false">
+            <CheckBoxPreference
+                android:key="pref_xgridlabels"
+                android:title="x-Labels"
+                android:summary="Display x-axis Grid labels"
+                android:defaultValue="true" />
+            <CheckBoxPreference
+                android:key="pref_ygridlabels"
+                android:title="y-Labels"
+                android:summary="Display y-axis Grid labels"
+                android:defaultValue="true" />
+            <EditTextPreference
+                android:key="pref_windowSize"
+                android:title="Window Size"
+                android:summary="@string/window_size"
+                android:numeric="integer"
+                android:defaultValue="200" />
+            <CheckBoxPreference
+                android:disableDependentsState="true"
+                android:key="pref_yAutoScale"
+                android:title="Y-auto-scale"
+                android:defaultValue="false" />
+            <EditTextPreference
+                android:dependency="pref_yAutoScale"
+                android:key="pref_y_max"
+                android:title="Max"
+                android:summary="@string/max_y"
+                android:digits="0123456789.-"
+                android:inputType="numberDecimal"
+                android:defaultValue="20" />
+            <EditTextPreference
+                android:dependency="pref_yAutoScale"
+                android:key="pref_y_min"
+                android:title="Min"
+                android:summary="@string/min_y"
+                android:digits="0123456789.-"
+                android:inputType="numberDecimal"
+                android:defaultValue="-10" />
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Input Stream"
+        android:key="pref_input_stream">
+        <EditTextPreference
+            android:key="pref_delimiter"
+            android:title="Delimiter"
+            android:summary="@string/delimiter"
+            android:defaultValue="," />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
