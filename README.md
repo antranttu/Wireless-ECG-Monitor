@@ -1,4 +1,4 @@
-<!-- # WIRELESS ECG MONITOR USING MOBILE DEVICE
+# WIRELESS ECG MONITOR USING MOBILE DEVICE
 
 * The objective of this project is to design a simple wireless electrocardiogram (ECG) monitoring system right on the user’s mobile device for convenience and mobility. This wireless ECG monitor potentially improves the quality of life of the user in general or cardiac patients in particular. The project has been completed using Radio Frequency transmission and receiver, Bluetooth technology, an ECG circuit and a mobile device for the monitoring of the signals.
 * Wireless communication and the transmitting/receiving of the signals is as follows:
@@ -17,6 +17,4 @@
 * **Android_ECG_Monitor** is an android application written in Java that is paired with our HC-05 bluetooth modules to receive these ECG signals wirelessly and display them in real time.
 
 ![](Videos_Images/mobile_app.png)
- -->
 
- asdf
